@@ -312,7 +312,7 @@ footer {
   outline: none;
   border-bottom: 1px solid #5a36cc;
   margin-bottom: 10px;
-  width: 46%;
+  width: 49%;
   color: white;
 }
 
@@ -410,7 +410,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: justify;
+  text-align: start;
 }
 
 .aboutdivFlex p {
@@ -423,10 +423,15 @@ footer {
   color: #e934ff;
 }
 
+.display {
+  display: none;
+}
+
 p {
   padding: 10px;
   font-size: 1rem;
   color: #dadada;
+  padding: 0 !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -435,6 +440,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .display {
+    display: block;
   }
 }
 

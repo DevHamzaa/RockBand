@@ -3,7 +3,7 @@
 }
 .aboutdivFlex {
   display: flex;
-  text-align: justify;
+  text-align: start;
   p {
     padding: 10px;
     font-size: 1rem;
@@ -13,14 +13,21 @@
 .headerLogoFont {
   color: $color-1;
 }
+.display {
+  display: none;
+}
 p {
   padding: 10px;
   font-size: 1rem;
   color: rgb(218, 218, 218);
+  padding: 0 !important;
 }
 
 @media screen and (max-width: 992px) {
   .aboutdivFlex {
     flex-direction: column;
+  }
+  .display {
+    display: block;
   }
 }
