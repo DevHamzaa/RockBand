@@ -1,0 +1,41 @@
+.albumHome {
+  background: url("../images/xabout-overlay.png.pagespeed.ic.D5C6m8tjkw.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.overlay {
+  background: $background-gradient;
+  min-height: 100vh;
+  padding: 30px;
+  .topOverlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-weight: 700;
+    }
+  }
+  .overlayButtom {
+    justify-content: center;
+    padding-top: 30px;
+    img {
+      border-radius: 50%;
+    }
+    h5 {
+      padding-top: 10px;
+    }
+    p {
+      font-weight: lighter;
+      font-size: 12px;
+      color: gainsboro;
+    }
+  }
+}
+@media screen and (max-width: 619px) {
+  .topOverlay {
+    flex-direction: column;
+    text-align: center;
+  }
+}

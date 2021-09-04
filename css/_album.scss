@@ -1,0 +1,13 @@
+.albumimg {
+  border-radius: 50%;
+  position: relative;
+}
+.albumBtn {
+  border: 2px solid transparent;
+  color: white;
+  border-image-source: $button-gradient;
+  border-image-slice: 1;
+  &:hover {
+    color: white;
+  }
+}

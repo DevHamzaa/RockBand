@@ -1,0 +1,70 @@
+.hidden {
+  display: none;
+}
+.header-coursel {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.651) 0%,
+    rgba(0, 0, 0, 0.397) 100%
+  );
+
+}
+.sliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p{
+    font-size: 16px;
+  }
+  h1{
+    font-size: 4rem;
+  }
+}
+
+.sliderContainer > div {
+  width:70%;
+  height: calc(100vh - 80px);
+  color: #fff;
+
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.magicStartLoop {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+  animation: op 200ms linear;
+}
+.sliderContainerBtn {
+  width: 150px;
+}
+.headerLogoFont {
+  font-family: "logo-font";
+}
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .sliderContainer > div {
+    width: 100%;
+    align-items: center;
+    height: calc(100vh - 179px);
+    h1{
+      font-size: 2.5rem;
+    }
+  }
+  .header-coursel {
+    padding: 40px;
+    text-align: center;
+  }
+}

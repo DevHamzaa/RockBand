@@ -1,0 +1,106 @@
+$text-color: #fff;
+$color-1: #e934ff;
+$color-2: #5a36cc;
+$btn-color: #191039;
+$dark-background: #0c0617;
+$button-gradient: linear-gradient(45deg, #503aca 0%, #ea34ff 100%);
+$background-gradient: linear-gradient(45deg, #503aca65 0%, #eb34ff44 100%);
+@font-face {
+  font-family: "text-font";
+  src: url("./fonts/NunitoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "logo-font";
+  src: url("./fonts/Satisfy-Regular.ttf");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn-success {
+  background: $button-gradient;
+  border: none;
+  padding: 10px 20px 10px 20px !important;
+}
+
+body {
+  color: $text-color !important;
+  background-color: $dark-background;
+  font-family: "text-font";
+}
+header {
+  min-height: 100vh;
+  background: url("../images/photo-1526478806334-5fd488fcaabc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $button-gradient;
+}
+::-webkit-scrollbar-thumb {
+  background: $button-gradient;
+  border-radius: 100px;
+}
+.navbar {
+  background: $dark-background !important;
+  padding-top: 1em !important;
+  box-shadow: 1px 1px 12px 0px #eb34ff;
+  z-index: 10000;
+}
+.navbar-brand {
+  font-family: "logo-font" !important;
+  font-size: 40px;
+}
+.logoColor {
+  color: $color-1;
+}
+::selection {
+  background: $color-1;
+}
+.nav-link {
+  color: $text-color !important;
+  padding: 10px 30px 10px 30px !important;
+  border-radius: 3px;
+  transition: 0.2s all linear;
+  border: 3px solid transparent;
+  &:hover {
+    border: 3px solid transparent;
+    border-image: linear-gradient(50deg, #503aca 0%, #ea34ff 100%);
+    border-image-slice: 1;
+    transform: scale(1.02);
+  }
+  @media screen and (max-width: 990px) {
+    &:hover {
+      background: linear-gradient(50deg, #503aca 0%, #ea34ff 100%);
+      transform: scale(1.02);
+    }
+  }
+}
+@import "header_slider";
+@import "albumHome";
+@import "aboutHome";
+@import "questionForm";
+@import "album";
+@import "about";
+@media screen and(max-width: 988px) {
+  .hide {
+    display: none !important;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid;
+    border-image-source: $button-gradient;
+    border-image-slice: 1;
+  }
+  .hme {
+    margin-top: 20px !important;
+  }
+}
